@@ -4,112 +4,103 @@ from dataclasses import dataclass
 
 import numpy as np
 import pandas as pd
-from sklearn.compose import ColumnTransformer
-from sklearn.impute import SimpleImputer
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import OneHotEncoder,StandardScaler
 
 from src.exception import CustomException
 from src.logger import logging
-
 from src.utils import save_object
+
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join('artifacts',"preprocessor.pkl")
+    transformed_obj_file_path: str = os.path.join('artifacts', "transformed_data.pkl")
 
 class DataTransformation:
     def __init__(self):
-        self.data_transformation_config=DataTransformationConfig()
-    
-    def get_data_transformer_object(self):
+        self.data_transformation_config = DataTransformationConfig()
+
+    def get_data_transformer_object(self, train_data_path, test_data_path):
         try:
-            numerical_columns = [
-                "Age as of Academic Year 17/18" , "Math-exam", "Science-exam ", "English-exam ", 
-                "Math19-1", "Science19-1", "English19-1", 
-                "Math19-2", "Science19-2", "English19-2", 
-                "Math19-3", "Science19-3", "English19-3",
-                "Math20-1", "Science20-1", "English20-1",
-                "Math20-2", "Science20-2", "English20-2",
-                "Math20-3", "Science20-3", "English20-3" ,
-            ]
+            # Load the datasets
+            train_dataset = pd.read_csv(train_data_path)
+            test_dataset = pd.read_csv(test_data_path)
+            logging.info("Read the train and test data completed")
 
-            categorical_columns = [
-                "Gender", "Current Year (17/18)", "Proposed Year/Grade (18/19)", 
-                "Year of Admission", "Previous Curriculum (17/18)2", "Current School", 
-                "Current Curriculum", "Previous year/Grade",
-            ]
-            
-            num_pipeline= Pipeline(
-                steps=[
-                    ("imputer", SimpleImputer(strategy="median")),
-                    ("scaler", StandardScaler()),
-                ]
-            )
+            # Step 1: Distinguish Classes
+            logging.info("Separating Grades")
+            train_dataset = train_dataset.rename(columns={'Current Year (17/18)': 'Grade'})
+            test_dataset = test_dataset.rename(columns={'Current Year (17/18)': 'Grade'})
 
-            cat_pipeline=Pipeline(
-                steps=[
-                    ("imputer", SimpleImputer(strategy="most_frequent")),
-                    ("one_hot_encoder", OneHotEncoder()),
-                    ("scaler", StandardScaler(with_mean=False)),
-                ]
-            )
+            # Create columns of Exam
+            feature_exam = [feature for feature in train_dataset.columns if 'Math' in feature or 'Science' in feature or 'English' in feature]
+            logging.info(f"Exam features: {feature_exam}")
+            print(feature_exam)
 
-            logging.info(f"Numerical Columns:{numerical_columns}")
-            logging.info(f"Categorical Columns: {categorical_columns}")
+            # Step 2: Create Dataset with required features
+            new_data_feature = feature_exam + ['Grade']
+            logging.info(f"New data features: {new_data_feature}")
+            print(new_data_feature)
 
-            preprocessor=ColumnTransformer(
-                [
-                    ("num_pipeline", num_pipeline , numerical_columns),
-                    ("cat_pipeline", cat_pipeline , categorical_columns),
-                ]
-            )
+            train_data = train_dataset[new_data_feature]
+            test_data = test_dataset[new_data_feature]
 
-            return preprocessor
+            # Step 3: Group similar features
+            feature_math = [feature for feature in train_data.columns if 'Math' in feature]
+            logging.info(f"Math features: {feature_math}")
+            print(feature_math)
 
-        except Exception as e:
-            raise CustomException(e,sys)
-    
+            feature_science = [feature for feature in train_data.columns if 'Science' in feature]
+            logging.info(f"Science features: {feature_science}")
+            print(feature_science)
 
-    def initiate_data_transformation(self,train_path, test_path):
-        
-        try:
-            train_df=pd.read_csv(train_path)
-            test_df=pd.read_csv(test_path)
+            feature_english = [feature for feature in train_data.columns if 'English' in feature]
+            logging.info(f"English features: {feature_english}")
+            print(feature_english)
 
-            logging.info("Read Train and Test data Completed")
-            logging.info("Obtaining Preprocessing")
+            logging.info(f"Train data shape before reshaping: {train_data.shape}")
+            logging.info(f"Test data shape before reshaping: {test_data.shape}")
 
-            preprocessing_obj=self.get_data_transformer_object()
+            # Convert to numeric data types
+            train_data = train_data.apply(pd.to_numeric, errors='coerce')
+            test_data = test_data.apply(pd.to_numeric, errors='coerce')
 
-            train_df['Current Year (17/18)'].unique()
-            dataset=train_df.rename(columns={'Current Year (17/18)':'Grade'})
+            train_data_reshaped = train_data.values.reshape(-1, train_data.shape[1])
+            test_data_reshaped = test_data.values.reshape(-1, test_data.shape[1])
 
-            test_df['Current Year (17/18)'].unique()
-            dataset=test_df.rename(columns={'Current Year (17/18)':'Grade'})
+            logging.info(f"Train data reshaped shape: {train_data_reshaped.shape}")
+            logging.info(f"Test data reshaped shape: {test_data_reshaped.shape}")
+            logging.info(f"New data features: {new_data_feature}")
 
-            feature_exam = [feature for feature in dataset.columns if 'Math' in feature or 'Science' in feature or 'English' in feature]
+            # Save the reshaped data
+            reshaped_train_path = os.path.join('artifacts', 'train_reshaped.csv')
+            reshaped_test_path = os.path.join('artifacts', 'test_reshaped.csv')
+            pd.DataFrame(train_data_reshaped, columns=new_data_feature).to_csv(reshaped_train_path, index=False)
+            pd.DataFrame(test_data_reshaped, columns=new_data_feature).to_csv(reshaped_test_path, index=False)
 
-            new_data_feature=feature_exam +['Grade']
+            logging.info("Data transformation completed.")
 
-            data=dataset[new_data_feature]  
-
-            feature_math = [feature for feature in data.columns if 'Math' in feature]
-
-            feature_science = [feature for feature in data.columns if 'Science' in feature]
-
-            feature_english = [feature for feature in data.columns if 'English' in feature]
-
-            logging.info("Applying preprocessing object")
+            # Save the transformation object
+            transformation = {
+                'feature_math': feature_math,
+                'feature_science': feature_science,
+                'feature_english': feature_english,
+            }
 
             save_object(
-                file_path=self.data_transformation_config.preprocessor_obj_file_path,
-                obj=preprocessing_obj
+                file_path=self.data_transformation_config.transformed_obj_file_path,
+                obj=transformation
             )
-            logging.info("Saved Processing objects")
-            return(
-                feature_english,
-                feature_math,
-                feature_science,
+            logging.info(f"Transformation object saved at: {self.data_transformation_config.transformed_obj_file_path}")
+
+            return (
+                train_data_reshaped,
+                test_data_reshaped,
+                new_data_feature
             )
+
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomException(e, sys)
+
+if __name__ == "__main__":
+    data_transformation = DataTransformation()
+    train_data_path = 'artifacts/train.csv'
+    test_data_path = 'artifacts/test.csv'
+    data_transformation.get_data_transformer_object(train_data_path, test_data_path)
