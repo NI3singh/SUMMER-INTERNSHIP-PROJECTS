@@ -17,47 +17,90 @@ from src.logger import logging
 from src.exception import CustomException
 from src.utils import save_object
 
+from sklearn.model_selection import train_test_split
+
 @dataclass
 class ModelTrainerConfig:
     trained_model_file_path: str = os.path.join('artifacts', 'model.pkl')
+    reshaped_train_path: str = os.path.join('artifacts', "reshaped_train.csv")
+    reshaped_test_path: str = os.path.join('artifacts', "reshaped_test.csv")
 
 class ModelTrainer:
     def __init__(self):
         self.model_trainer_config = ModelTrainerConfig()
 
-    def scale_data(self, x_train, x_test):
+    def split_data(self, raw_data_reshaped, new_data_feature):
         try:
-            scaler = StandardScaler()
-            x_scaled_train = scaler.fit_transform(x_train)
-            x_scaled_test = scaler.transform(x_test)
-            plt.scatter(range(0,len(x_scaled_train)),x_scaled_train)
-            plt.scatter(range(0,len(x_scaled_test)),x_scaled_test)
+            os.makedirs(os.path.dirname(self.model_trainer_config.reshaped_train_path), exist_ok=True)
+            os.makedirs(os.path.dirname(self.model_trainer_config.reshaped_test_path), exist_ok=True)
 
-            logging.info("Data scaling completed.")
+            train_data_reshaped, test_data_reshaped = train_test_split(raw_data_reshaped, test_size=0.2, random_state=42)
+            
+            train_data_reshaped_df = pd.DataFrame(train_data_reshaped, columns=new_data_feature)
+            test_data_reshaped_df = pd.DataFrame(test_data_reshaped, columns=new_data_feature)
 
-            return x_scaled_train, x_scaled_test
+            train_data_reshaped_df.to_csv(self.model_trainer_config.reshaped_train_path, index=False, header=True)
+            test_data_reshaped_df.to_csv(self.model_trainer_config.reshaped_test_path, index=False, header=True)
+
+            logging.info("Splitting of Training and Testing Data is completed")
+            
+            print("Train data:", train_data_reshaped)
+            print("Test data:", test_data_reshaped)
+
+            return train_data_reshaped, test_data_reshaped
+
         except Exception as e:
             raise CustomException(e, sys)
 
-    def train_model(self, x_scaled_train):
+    def scale_data(self, train_data_reshaped, test_data_reshaped):
+        try:
+            scaler = StandardScaler()
+            scaled_train = scaler.fit_transform(train_data_reshaped)
+            scaled_test = scaler.transform(test_data_reshaped)
+            
+            plt.figure(figsize=(10, 6))
+            plt.scatter(range(0, len(scaled_train)), scaled_train, label='Scaled Train Data')
+            plt.title('Scaled Train Data')
+            plt.xlabel('Index')
+            plt.ylabel('Value')
+            plt.grid(True)
+            plt.show()
+
+        
+            plt.figure(figsize=(10, 6))
+            plt.scatter(range(0, len(scaled_test)), scaled_test, label='Scaled Test Data')
+            plt.title('Scaled Test Data')
+            plt.xlabel('Index')
+            plt.ylabel('Value')
+            plt.grid(True)
+            plt.show()
+
+            logging.info("Data scaling completed.")
+
+            return scaled_train, scaled_test
+        except Exception as e:
+            raise CustomException(e, sys)
+
+
+    def train_model(self, scaled_train):
         try:
             cluster = AgglomerativeClustering(n_clusters=3, metric='euclidean', linkage='ward')
-            cluster.fit(x_scaled_train)
+            cluster.fit(scaled_train)
             logging.info("Model training completed.")
             return cluster
         except Exception as e:
             raise CustomException(e, sys)
 
-    def plot_dendrogram(self, x_scaled, title):
+    def plot_dendrogram(self, scaled_train, title):
         plt.figure(figsize=(20, 7))
         plt.title(title)
-        sc.dendrogram(sc.linkage(x_scaled, method='ward'))
+        sc.dendrogram(sc.linkage(scaled_train, method='ward'))
         plt.xlabel('Sample Index')
         plt.ylabel('Euclidean Distance')
         plt.show()
 
-    def plot_cluster(self, x_scaled, x, cluster_labels):
-        plt.scatter(range(len(x_scaled)), x, c=cluster_labels)
+    def plot_cluster(self, scaled_test, x, cluster_labels):
+        plt.scatter(range(len(scaled_test)), x, c=cluster_labels)
         plt.title("Clustered Data")
         plt.show()
 
@@ -71,19 +114,30 @@ class ModelTrainer:
 
         return trend
 
-    def evaluate_model(self, data, feature_math):
+    def evaluate_model(self, raw_data, feature_math):
         try:
-            new_data = data[feature_math]
+            new_data = raw_data[feature_math]
             trends = [self.calculate_trend(new_data.loc[i].dropna()) for i in range(len(new_data))]
             improvement_status = ["Improving" if x > 0 else "Declining" if x < 0 else "Stable" for x in trends]
             final_data = new_data.copy()
             final_data['Improvement Status'] = improvement_status
             final_data['Overall Performance'] = new_data.mean(axis=1)
+            print(final_data)
             logging.info("Evaluation completed.")
             return final_data
         except Exception as e:
             raise CustomException(e, sys)
-
+        
+    def plot_student_performance(self, student_id, new_data):
+        try:
+            plt.plot(list(new_data.columns), list(new_data.loc[student_id]))
+            plt.title(f'Student Performance for ID {student_id}')
+            plt.xlabel('Exams')
+            plt.ylabel('Scores')
+            plt.show()
+        except Exception as e:
+            raise CustomException(e, sys)
+        
     def save_model(self, model):
         try:
             save_object(file_path=self.model_trainer_config.trained_model_file_path, obj=model)
@@ -91,33 +145,32 @@ class ModelTrainer:
         except Exception as e:
             raise CustomException(e, sys)
 
-    def initiate_model_training(self, train_data_reshaped, test_data_reshaped, feature_all):
+    def initiate_model_training(self, new_data_feature, train_data_reshaped, test_data_reshaped):
         try:
             logging.info("Model Training has been initiated")
 
-            logging.info(f"train_data_reshaped shape: {train_data_reshaped.shape}")
-            logging.info(f"test_data_reshaped shape: {test_data_reshaped.shape}")
-            logging.info(f"feature_all: {feature_all}")
-
-            final_train_data = self.evaluate_model(pd.DataFrame(train_data_reshaped, columns=feature_all), feature_all)
-            final_test_data = self.evaluate_model(pd.DataFrame(test_data_reshaped, columns=feature_all), feature_all)
+            final_train_data = self.evaluate_model(pd.DataFrame(train_data_reshaped, columns=new_data_feature), new_data_feature)
+            final_test_data = self.evaluate_model(pd.DataFrame(test_data_reshaped, columns=new_data_feature), new_data_feature)
 
             x_train = final_train_data['Overall Performance'].values.reshape(-1, 1)
             x_test = final_test_data['Overall Performance'].values.reshape(-1, 1)
 
-            x_scaled_train, x_scaled_test = self.scale_data(x_train, x_test)
+            new_scaled_train, new_scaled_test = self.scale_data(x_train, x_test)
 
-            self.plot_dendrogram(x_scaled_train, "Training Data Dendrogram")
-            self.plot_dendrogram(x_scaled_test, "Testing Data Dendrogram")
+            self.plot_dendrogram(new_scaled_train, "Training Data Dendrogram")
+            self.plot_dendrogram(new_scaled_test, "Testing Data Dendrogram")
 
-            cluster_model = self.train_model(x_scaled_train)
+            cluster_model = self.train_model(new_scaled_train)
 
             final_train_data['Cluster'] = cluster_model.labels_
             performance = ['Strong' if i == 0 else 'Moderate' if i == 1 else 'Weak' for i in cluster_model.labels_]
             final_train_data['Performance'] = performance
 
-            self.plot_cluster(x_scaled_train, final_train_data['Overall Performance'], cluster_model.labels_)
+            self.plot_cluster(new_scaled_train, final_train_data['Overall Performance'], cluster_model.labels_)
             self.save_model(cluster_model)
+
+            student_id = int(input("Enter the student ID to plot performance: "))
+            self.plot_student_performance(student_id, final_train_data[new_data_feature])
 
             logging.info("Model training and evaluation completed.")
 
@@ -127,13 +180,18 @@ class ModelTrainer:
             raise CustomException(e, sys)
 
 if __name__ == "__main__":
-    from src.components.data_transformation import DataTransformation
 
-    train_data_path = 'artifacts/train_reshaped.csv'
-    test_data_path = 'artifacts/test_reshaped.csv'
     data_transformation_obj = data_transformation.DataTransformation()
-    data_transformation_obj = DataTransformation()
-    train_data_reshaped, test_data_reshaped, new_data_feature = data_transformation_obj.get_data_transformer_object('artifacts/train.csv', 'artifacts/test.csv')
-
+        
+    # Load and transform raw data
+    raw_data_path = 'artifacts/data.csv'
+    raw_data_reshaped, new_data_feature, raw_data = data_transformation_obj.get_data_transformer_object(raw_data_path)
+        
+    # Initialize Model Trainer
     model_trainer_obj = ModelTrainer()
-    model_trainer_obj.initiate_model_training(train_data_reshaped, test_data_reshaped, new_data_feature)
+
+    # Split the reshaped data
+    train_data_reshaped, test_data_reshaped = model_trainer_obj.split_data(raw_data_reshaped, new_data_feature)
+
+    # Initiate model training
+    model_trainer_obj.initiate_model_training(new_data_feature, train_data_reshaped, test_data_reshaped)

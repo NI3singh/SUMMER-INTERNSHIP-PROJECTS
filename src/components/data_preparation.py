@@ -6,6 +6,7 @@ import os
 from src.exception import CustomException
 from src.logger import logging
 from src.utils import save_object
+from src.components import data_ingestion
 
 @dataclass
 class DataPreparationConfig:
@@ -15,14 +16,15 @@ class DataPreparation:
     def __init__(self):
         self.data_preparation_config = DataPreparationConfig()
         
-    def initiate_data_preparation(self, train_data_path, test_data_path):
+    def initiate_data_preparation(self, raw_data_path,):
         try:
             # Load datasets
-            dataset = pd.read_csv(train_data_path)
-            dataset.index
+            
+            dataset = pd.read_csv(raw_data_path)
+            
+            print(dataset.head())
 
-            dataset['Id'] = [i for i in range(len(dataset))]
-            dataset.set_index('Id', inplace=True)
+            logging.info("Successfully Read the Raw data")
 
             # Step 1: Finding Missing Values
             features_na = [feature for feature in dataset.columns if dataset[feature].isnull().sum() > 1]
@@ -45,12 +47,16 @@ class DataPreparation:
                 dataset[feature] = dataset[feature].apply(lambda x: x if is_float(x) else np.nan)
                 dataset[feature] = dataset[feature].astype(float)
 
+            logging.info("Successfully Completed Finding and Replacing of Missing Values")
+
 
             # Step 3: Convert Datatype of Columns to necessary one
             for feature in feature_float:
                 dataset[feature] = dataset[feature].astype(float)
 
             dataset.info()
+
+            logging.info("Successfully Converted Datatypes of Columns to float")
 
             # Step 4: Distinguish Categorical features and Numerical features
             numerical_features = [feature for feature in dataset.columns if dataset[feature].dtypes != 'O']
@@ -61,6 +67,10 @@ class DataPreparation:
             logging.info(f"Categorical features: {categorical_features}")
             logging.info(dataset[categorical_features].head())
 
+            print("Numerical Features: " ,numerical_features)
+            print("Categorical Features: " ,categorical_features)
+
+            
             # Step 5: Replace NaN values with suitable values
             numerical_with_nan = [feature for feature in dataset.columns if dataset[feature].isnull().sum() > 1 and dataset[feature].dtypes != 'O']
             logging.info(f"Numerical features with NaN: {numerical_with_nan}")
@@ -72,12 +82,9 @@ class DataPreparation:
             logging.info("Data preparation completed.")
 
             # Save the prepared data (optional, you can add this if needed)
-            prepared_train_path = os.path.join('artifacts', 'train_prepared.csv')
-            prepared_test_path = os.path.join('artifacts', 'test_prepared.csv')
-            dataset.to_csv(prepared_train_path, index=False)
-            # Assuming test data preparation is similar
-            test_data = pd.read_csv(test_data_path)
-            test_data.to_csv(prepared_test_path, index=False)
+            
+            prepared_raw_path = os.path.join('artifacts', 'raw_prepared.csv')
+            
 
             preparation = {
                 'numerical_features': numerical_features,
@@ -102,6 +109,6 @@ class DataPreparation:
 
 if __name__ == "__main__":
     data_preparation = DataPreparation()
-    data_preparation.initiate_data_preparation('artifacts/train.csv', 'artifacts/test.csv')
+    data_preparation.initiate_data_preparation('artifacts/data.csv')
 
     
