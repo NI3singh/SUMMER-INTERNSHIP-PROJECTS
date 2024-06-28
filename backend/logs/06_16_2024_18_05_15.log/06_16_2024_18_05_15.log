@@ -1,0 +1,6 @@
+[ 2024-06-16 18:05:15,617 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-06-16 18:05:15,633 ] 97 werkzeug - INFO -  * Debugger PIN: 111-881-178
+[ 2024-06-16 18:05:16,644 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:05:16] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-16 18:05:21,109 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:05:21] "POST /data HTTP/1.1" 200 -
+[ 2024-06-16 18:05:23,512 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:05:23] "[35m[1mGET /fetch_data HTTP/1.1[0m" 500 -
+[ 2024-06-16 18:05:36,837 ] 97 werkzeug - INFO -  * Detected change in 'C:\\E Drive\\f drive\\rishabh ki folder hain delete mat karna\\JBcodeapp\\Student Performance Analysis\\project\\backend\\src\\pipeline\\predict_pipeline.py', reloading

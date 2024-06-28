@@ -1,0 +1,5 @@
+[ 2024-06-16 18:58:27,752 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-06-16 18:58:27,752 ] 97 werkzeug - INFO -  * Debugger PIN: 111-881-178
+[ 2024-06-16 18:58:55,618 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:58:55] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-16 18:59:07,837 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:59:07] "POST /data HTTP/1.1" 200 -
+[ 2024-06-16 19:03:04,759 ] 97 werkzeug - INFO -  * Detected change in 'C:\\E Drive\\f drive\\rishabh ki folder hain delete mat karna\\JBcodeapp\\Student Performance Analysis\\project\\backend\\src\\components\\model_trainer.py', reloading

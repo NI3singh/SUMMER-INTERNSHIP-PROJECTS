@@ -1,0 +1,15 @@
+[ 2024-06-13 23:43:50,584 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-06-13 23:43:52,085 ] 97 werkzeug - INFO -  * Debugger PIN: 111-881-178
+[ 2024-06-13 23:43:55,343 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:43:55] "[31m[1mGET /data HTTP/1.1[0m" 405 -
+[ 2024-06-13 23:43:57,502 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:43:57] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-13 23:44:14,558 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:44:14] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-13 23:44:15,374 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:44:15] "POST /data HTTP/1.1" 200 -
+[ 2024-06-13 23:44:21,618 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:44:21] "[31m[1mGET /data HTTP/1.1[0m" 405 -
+[ 2024-06-13 23:44:21,763 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:44:21] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-13 23:44:22,773 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:44:22] "[31m[1mGET /data HTTP/1.1[0m" 405 -
+[ 2024-06-13 23:44:23,602 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:44:23] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-13 23:45:11,450 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:45:11] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-13 23:45:11,459 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:45:11] "POST /data HTTP/1.1" 200 -
+[ 2024-06-13 23:45:20,504 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:45:20] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-13 23:45:20,511 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:45:20] "POST /data HTTP/1.1" 200 -
+[ 2024-06-13 23:52:53,571 ] 97 werkzeug - INFO -  * Detected change in 'c:\\e drive\\f drive\\rishabh ki folder hain delete mat karna\\jbcodeapp\\student performance analysis\\project\\backend\\src\\components\\model_trainer.py', reloading

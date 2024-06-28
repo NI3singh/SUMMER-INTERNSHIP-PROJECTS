@@ -1,0 +1,5 @@
+[ 2024-06-16 16:45:44,471 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-06-16 16:45:44,502 ] 97 werkzeug - INFO -  * Debugger PIN: 111-881-178
+[ 2024-06-16 16:45:58,300 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 16:45:58] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-16 16:46:30,420 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 16:46:30] "POST /data HTTP/1.1" 200 -
+[ 2024-06-16 16:47:06,265 ] 97 werkzeug - INFO -  * Detected change in 'C:\\E Drive\\f drive\\rishabh ki folder hain delete mat karna\\JBcodeapp\\Student Performance Analysis\\project\\backend\\src\\components\\data_ingestion.py', reloading

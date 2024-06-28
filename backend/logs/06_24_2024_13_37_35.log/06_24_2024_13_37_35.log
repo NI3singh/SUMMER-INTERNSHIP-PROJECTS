@@ -1,0 +1,5 @@
+[ 2024-06-24 13:37:35,141 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-06-24 13:37:35,158 ] 97 werkzeug - INFO -  * Debugger PIN: 111-881-178
+[ 2024-06-24 13:40:06,883 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2024 13:40:06] "GET /download_data HTTP/1.1" 200 -
+[ 2024-06-24 13:43:19,681 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2024 13:43:19] "GET /download_data HTTP/1.1" 200 -
+[ 2024-06-24 13:47:26,948 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2024 13:47:26] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -

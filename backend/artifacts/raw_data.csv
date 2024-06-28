@@ -1,0 +1,72 @@
+Gender,Age as of Academic Year 17/18,Current Year (17/18),Proposed Year/Grade (18/19),Year of Admission ,Previous Curriculum (17/18)2,Current School ,Current Curriculum ,Previous year/Grade ,Math-exam,Science-exam,English-exam,Math19-1,Science19-1,English19-1,Math19-2,Science19-2,English19-2,Math19-3,Science19-3,English19-3,Math20-1,Science20-1,English20-1,Math20-2,Science20-2,English20-2,Math20-3,Science20-3,English20-3,Id
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,81.0,59,65.0,88.0,82.0,90.0,84.0,86.0,85.0,83.0,52.0,70.0,64.0,62.0,87.0,69.0,98.0,84.0,80.0,98.0,81.0,0
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,66.0,89,67.0,76.0,82.0,57.0,58.0,77.0,74.0,95.0,62.0,60.0,60.0,84.0,89.0,74.0,96.0,70.0,82.0,71.0,99.0,1
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,90.0,55,87.0,81.0,69.0,73.0,70.0,75.0,80.0,84.0,65.0,71.0,84.0,72.0,88.0,93.0,84.0,74.0,91.0,85.0,86.0,2
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,84.0,73,83.0,52.0,62.0,73.0,71.0,63.0,82.0,59.0,68.0,93.0,66.0,83.0,95.0,85.0,99.0,75.0,73.0,84.0,85.0,3
+Male,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,85.0,52,69.0,52.0,77.0,57.0,81.0,57.0,94.0,69.0,70.0,58.0,70.0,61.0,85.0,97.0,82.0,75.0,82.0,86.0,69.0,4
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,77.0,86,67.0,61.0,89.0,55.0,92.0,87.0,59.0,80.0,51.0,88.0,78.0,81.0,71.0,87.0,85.0,85.0,71.0,78.0,69.0,5
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,69.0,66,61.0,82.0,82.0,50.0,91.0,77.0,55.0,54.0,73.0,79.0,67.0,94.0,77.0,95.0,73.0,87.0,72.0,74.0,78.0,6
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,92.0,87,99.0,82.0,86.0,69.0,65.0,66.0,73.0,93.0,70.0,80.0,78.0,77.0,76.0,81.0,86.0,82.0,93.0,87.0,83.0,7
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,79.0,72,69.0,92.0,67.0,91.0,81.0,94.0,95.0,57.0,76.0,56.0,73.0,81.0,69.0,97.0,96.0,79.0,75.0,91.0,99.0,8
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,55.0,58,67.0,59.0,60.0,70.0,45.0,59.0,68.0,67.0,70.0,62.0,68.0,64.0,72.0,74.0,78.0,65.0,60.0,80.0,82.0,9
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,73.0,74,57.0,95.0,79.0,55.0,81.0,88.0,76.0,81.0,60.0,64.0,67.0,76.0,66.0,83.0,76.0,82.0,93.0,78.0,80.0,10
+Female,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,86.0,97,75.0,68.0,71.0,72.0,89.0,71.0,79.0,93.0,97.0,96.0,99.0,97.0,78.0,93.0,81.0,84.0,96.0,90.0,92.0,11
+Female,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,100.0,86,95.0,60.0,64.0,84.0,88.0,89.0,67.0,89.0,73.0,93.0,77.0,100.0,79.0,76.0,81.0,93.0,80.0,89.0,91.0,12
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,83.0,78,64.0,55.0,87.0,55.0,93.0,90.0,88.0,73.0,77.0,91.0,92.0,94.0,89.0,98.0,87.0,81.0,73.0,76.0,98.0,13
+Female,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,77.0,56,62.0,73.0,92.0,77.0,94.0,80.0,92.0,65.0,51.0,54.0,94.0,94.0,90.0,84.0,79.0,92.0,93.0,78.0,84.0,14
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,50.0,53,52.0,59.0,60.0,52.0,60.0,55.0,62.0,53.0,56.0,68.0,59.0,60.0,60.0,59.0,60.0,59.0,61.0,65.0,70.0,15
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,75.0,85,88.0,83.0,66.0,60.0,80.0,81.0,72.0,93.0,71.0,89.0,89.0,82.0,83.0,76.0,79.0,86.0,86.0,81.0,86.0,16
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,97.0,80,83.0,81.0,88.0,86.0,79.0,86.0,70.0,93.0,93.0,90.0,81.0,84.0,80.0,89.0,85.0,90.0,96.0,86.0,80.0,17
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,52.0,85,67.0,64.0,50.0,83.0,70.0,87.0,65.0,86.0,51.0,54.0,91.0,61.0,74.0,97.0,76.0,71.0,94.0,79.0,70.0,18
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,60.0,58,54.0,69.0,70.0,58.0,64.0,40.0,55.0,69.0,45.0,50.0,65.0,48.0,50.0,70.0,55.0,59.0,69.0,58.0,58.0,19
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,95.0,75,70.0,72.0,95.0,81.0,76.0,90.0,91.0,95.0,56.0,89.0,67.0,93.0,88.0,71.0,73.0,80.0,83.0,90.0,99.0,20
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,98.0,71,71.0,67.0,84.0,65.0,78.0,86.0,86.0,92.0,89.0,75.0,79.0,81.0,95.0,93.0,95.0,89.0,83.0,94.0,83.0,21
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,60.0,57,80.0,76.0,73.0,73.0,65.0,61.0,86.0,67.0,91.0,56.0,81.0,61.0,74.0,98.0,80.0,84.0,76.0,79.0,80.0,22
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,76.0,54,85.0,59.0,65.0,69.0,74.0,81.0,80.0,57.0,76.0,57.0,90.0,69.0,95.0,72.0,69.0,97.0,84.0,92.0,84.0,23
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,60.0,50,58.0,51.0,80.0,66.0,59.0,68.0,60.0,57.0,69.0,56.0,65.0,62.0,73.0,81.0,96.0,82.0,88.0,95.0,95.0,24
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,98.0,79,81.0,82.0,86.0,73.0,66.0,74.0,89.0,97.0,87.0,78.0,89.0,86.0,98.0,90.0,76.0,93.0,90.0,93.0,94.0,25
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,90.0,90,79.0,66.0,68.0,90.0,71.0,84.0,73.0,92.0,93.0,78.0,87.0,83.0,81.0,76.0,82.0,88.0,96.0,80.0,90.0,26
+Female,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,89.0,72,94.0,65.0,84.0,71.0,74.0,66.0,65.0,75.0,85.0,97.0,99.0,87.0,98.0,81.0,87.0,90.0,81.0,94.0,81.0,27
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,76.0,54,83.0,87.0,73.0,85.0,68.0,86.0,81.0,60.0,92.0,87.0,79.0,80.0,69.0,99.0,82.0,72.0,76.0,94.0,95.0,28
+Male,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,91.0,83,53.0,57.0,68.0,74.0,72.0,57.0,76.0,86.0,76.0,86.0,84.0,64.0,75.0,83.0,77.0,69.0,85.0,81.0,92.0,29
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,77.0,98,89.0,90.0,60.0,72.0,77.0,72.0,82.0,90.0,83.0,74.0,85.0,90.0,78.0,90.0,85.0,84.0,89.0,83.0,85.0,30
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,61.0,86,85.0,75.0,50.0,92.0,87.0,94.0,95.0,65.0,62.0,93.0,71.0,84.0,66.0,76.0,92.0,71.0,71.0,88.0,95.0,31
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,89.0,96,90.0,84.0,90.0,78.0,86.0,85.0,78.0,79.0,92.0,92.0,87.0,80.0,82.0,82.0,84.0,75.0,81.0,88.0,97.0,32
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,94.0,90,69.0,63.0,60.0,90.0,61.0,63.0,56.0,79.0,83.0,63.0,86.0,75.0,71.0,85.0,76.0,73.0,77.0,82.0,93.0,33
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,83.0,52,70.0,78.0,56.0,89.0,62.0,60.0,75.0,57.0,63.0,83.0,78.0,95.0,70.0,95.0,91.0,82.0,98.0,71.0,87.0,34
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,71.0,86,73.0,68.0,77.0,93.0,66.0,73.0,57.0,76.0,65.0,91.0,81.0,93.0,76.0,84.0,70.0,78.0,83.0,84.0,85.0,35
+Female,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,83.0,83,90.0,62.0,59.0,51.0,95.0,56.0,88.0,50.0,62.0,81.0,67.0,83.0,83.0,97.0,88.0,70.0,69.0,78.0,95.0,36
+Female,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,80.0,80,85.0,93.0,94.0,92.0,80.0,75.0,66.0,76.0,94.0,60.0,69.0,79.0,83.0,96.0,97.0,72.0,93.0,84.0,81.0,37
+Male,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,71.0,80,62.0,93.0,69.0,69.0,68.0,91.0,91.0,75.0,56.0,71.0,83.0,61.0,78.0,80.0,91.0,75.0,85.0,79.0,77.0,38
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,93.0,94,60.0,66.0,92.0,72.0,94.0,78.0,94.0,73.0,93.0,87.0,78.0,69.0,60.0,78.0,78.0,87.0,96.0,76.0,72.0,39
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,85.0,80,78.0,65.0,68.0,74.0,81.0,75.0,79.0,96.0,70.0,85.0,83.0,80.0,82.0,86.0,75.0,89.0,90.0,97.0,98.0,40
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,90.0,100,80.0,63.0,84.0,68.0,71.0,73.0,88.0,79.0,71.0,75.0,98.0,76.0,97.0,80.0,88.0,94.0,84.0,100.0,91.0,41
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,62.0,64,74.0,83.0,71.0,60.0,60.0,79.0,74.0,62.0,70.0,82.0,65.0,61.0,72.0,97.0,97.0,87.0,93.0,95.0,83.0,42
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,77.0,65,79.0,82.0,61.0,53.0,64.0,61.0,62.0,57.0,70.0,55.0,66.0,92.0,63.0,75.0,85.0,81.0,80.0,80.0,94.0,43
+Female,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,73.0,53,72.0,93.0,95.0,88.0,71.0,86.0,81.0,50.0,60.0,70.0,90.0,89.0,86.0,75.0,95.0,80.0,92.0,82.0,85.0,44
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,77.0,69,72.0,64.0,53.0,72.0,88.0,72.0,61.0,70.0,62.0,83.0,78.0,86.0,83.0,87.0,76.0,69.0,77.0,92.0,75.0,45
+Female,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,50.0,63,87.0,94.0,86.0,56.0,78.0,82.0,87.0,76.0,57.0,75.0,73.0,79.0,89.0,98.0,88.0,73.0,77.0,85.0,75.0,46
+Female,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,68.0,72,84.0,83.0,65.0,71.0,84.0,94.0,63.0,80.0,53.0,95.0,67.0,68.0,90.0,90.0,93.0,94.0,78.0,69.0,96.0,47
+Male,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,90.0,79,87.0,81.0,60.0,64.0,62.0,71.0,69.0,80.0,84.0,50.0,90.0,93.0,73.0,83.0,87.0,78.0,97.0,75.0,96.0,48
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,69.0,81,63.0,59.0,68.0,68.0,64.0,78.0,85.0,88.0,82.0,51.0,82.0,66.0,64.0,81.0,72.0,81.0,78.0,71.0,96.0,49
+Male,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,52.0,69,52.0,95.0,80.0,60.0,66.0,79.0,63.0,88.0,61.0,69.0,85.0,73.0,86.0,72.0,78.0,88.0,73.0,82.0,87.0,50
+Male,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,92.0,89,85.0,94.0,76.0,89.0,93.0,94.0,86.0,81.0,55.0,88.0,76.0,63.0,68.0,87.0,87.0,90.0,94.0,83.0,91.0,51
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,87.0,67,86.0,83.0,92.0,62.0,77.0,61.0,62.0,70.0,60.0,82.0,70.0,64.0,63.0,72.0,87.0,91.0,80.0,92.0,70.0,52
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,56.0,56,61.0,79.0,65.0,63.0,85.0,84.0,86.0,75.0,91.0,50.0,60.0,88.0,83.0,88.0,79.0,82.0,75.0,96.0,75.0,53
+Male,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,64.0,69,85.0,58.0,68.0,57.0,95.0,81.0,69.0,59.0,63.0,74.0,71.0,65.0,67.0,79.0,95.0,72.0,86.0,94.0,90.0,54
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,89.0,58,77.0,91.0,66.0,93.0,93.0,84.0,66.0,61.0,85.0,77.0,92.0,79.0,95.0,91.0,78.0,69.0,94.0,71.0,77.0,55
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,65.0,70,52.0,58.0,91.0,71.0,77.0,63.0,79.0,94.0,59.0,90.0,95.0,79.0,67.0,92.0,78.0,72.0,90.0,86.0,80.0,56
+Female,3,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,80.0,58,58.0,89.0,94.0,76.0,78.0,59.0,87.0,90.0,88.0,61.0,70.0,79.0,73.0,81.0,75.0,70.0,90.0,72.0,87.0,57
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,85.0,67,75.0,70.0,59.0,94.0,89.0,63.0,81.0,59.0,72.0,61.0,81.0,81.0,85.0,75.0,94.0,76.0,73.0,94.0,82.0,58
+Male,4,KG1,KG2,School 1 Current Student,American ,School 1,American ,Grade System,53.0,54,52.0,82.0,52.0,72.0,72.0,65.0,86.0,66.0,54.0,69.0,90.0,76.0,73.0,80.0,93.0,86.0,99.0,94.0,99.0,59
+Male,4,KG1,KG2,New Admission 18/19,CBSE,School 1,American ,Grade system,80.0,66,52.0,87.0,93.0,82.0,83.0,85.0,64.0,65.0,64.0,62.0,83.0,87.0,64.0,75.0,97.0,93.0,90.0,97.0,69.0,607
+Female,4,KG1,KG2,New Admission 18/19,American ,School 1,American ,Grade system,92.0,92,90.0,66.0,86.0,67.0,65.0,72.0,75.0,67.0,87.0,89.0,85.0,82.0,77.0,85.0,75.0,93.0,83.0,84.0,99.0,608
+Male,3,KG1,KG2,New Admission 18/19,CBSE,School 1,American ,Grade system,88.0,79,62.0,80.0,84.0,50.0,64.0,92.0,56.0,57.0,73.0,56.0,83.0,83.0,61.0,93.0,99.0,94.0,80.0,92.0,96.0,609
+Female,3,KG1,Y1,New Admission 18/19,British,School 2,British,Grade system,75.0,77.5,85.0,100.0,93.1,87.6,88.3,90.5,92.2,83.3,83.3,92.4,80.2,91.3,85.6,71.0,90.1,93.3,68.8,60.0,100.0,1473
+Female,4,KG1,Y1,New Admission 18/19,UAE,School 2,British,Grade system,72.5,#VALUE!,77.5,80.2,91.3,85.6,89.9,85.0,79.7,72.9,100.0,92.3,92.6,90.5,87.6,74.2,93.3,77.3,68.7,40.0,96.3,1476
+Male,3,KG1,Y1,New Admission 18/19,British,School 2,British,Grade system,95.0,95,77.5,80.2,87.6,61.7,61.7,77.7,89.7,67.3,100.0,89.4,68.8,88.4,73.3,70.6,68.8,88.1,79.2,77.3,100.0,1477
+Female,4,KG1,Y1,New Admission 18/19,UAE,School 2,British,Grade system,95.0,95,95.0,92.6,73.3,91.3,91.3,82.7,95.3,63.0,95.5,88.3,80.7,69.8,90.5,63.4,83.7,89.7,74.7,70.4,100.0,1478
+Female,4,KG1,Y1,New Admission 18/19,Australian,School 2,British,Grade system,72.5,95,62.5,63.0,93.1,84.5,85.0,83.2,66.7,44.4,64.0,91.3,91.3,88.4,88.4,87.6,92.0,64.7,88.2,78.6,72.9,1483
+Female,4,KG1,Y1,New Admission 18/19,British,School 2,British,Grade system,72.5,87.5,75.0,65.7,89.9,85.6,77.7,84.5,60.0,75.0,64.0,83.3,87.6,69.8,69.8,88.3,92.0,56.3,87.5,77.6,67.3,1484
+Female,3,KG1,Y1,New Admission 18/19,UAE,School 2,British,Grade system,97.5,95,75.0,100.0,91.3,90.8,77.2,84.5,91.3,44.4,72.9,92.3,84.5,93.1,77.7,85.6,100.0,64.7,81.4,80.5,98.6,1485
+Female,4,KG1,Y1,New Admission 18/19,UAE,School 2,British,Grade system,87.5,70,72.5,75.0,88.3,79.2,78.0,88.3,89.9,57.1,63.0,95.2,88.3,61.7,33.3,79.2,33.3,74.2,83.2,77.8,83.3,1487

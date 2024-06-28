@@ -1,0 +1,4 @@
+[ 2024-06-28 13:42:11,731 ] 23 root - INFO - Entered the Data Ingestion Method
+[ 2024-06-28 13:42:13,091 ] 29 root - INFO - Successfully Read the Dataset as Dataframe
+[ 2024-06-28 13:42:13,440 ] 33 root - INFO - Indexing of ID column is completed
+[ 2024-06-28 13:42:13,773 ] 46 root - INFO - Ingestion of the Data is Completed

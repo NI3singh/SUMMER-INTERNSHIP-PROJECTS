@@ -1,0 +1,12 @@
+[ 2024-06-16 12:35:25,277 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-06-16 12:35:25,277 ] 97 werkzeug - INFO -  * Debugger PIN: 111-881-178
+[ 2024-06-16 12:35:25,910 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 12:35:25] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-16 12:35:29,764 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 12:35:29] "POST /data HTTP/1.1" 200 -
+[ 2024-06-16 12:35:30,993 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 12:35:30] "[35m[1mGET /fetch_data HTTP/1.1[0m" 500 -
+[ 2024-06-16 12:36:01,230 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 12:36:01] "[35m[1mGET /fetch_data HTTP/1.1[0m" 500 -
+[ 2024-06-16 12:36:01,498 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 12:36:01] "GET /fetch_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[ 2024-06-16 12:36:01,742 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 12:36:01] "GET /fetch_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[ 2024-06-16 12:36:01,899 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 12:36:01] "GET /fetch_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[ 2024-06-16 12:36:02,050 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 12:36:02] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-16 12:36:02,063 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 12:36:02] "[36mGET /fetch_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-06-16 12:36:43,286 ] 97 werkzeug - INFO -  * Detected change in 'C:\\E Drive\\f drive\\rishabh ki folder hain delete mat karna\\JBcodeapp\\Student Performance Analysis\\project\\backend\\app.py', reloading

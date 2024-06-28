@@ -1,0 +1,58 @@
+[ 2024-06-16 18:28:04,772 ] 24 root - INFO - Entered the Data Ingestion Method
+[ 2024-06-16 18:28:04,794 ] 30 root - INFO - Cleaning Feature Strings
+[ 2024-06-16 18:28:04,806 ] 38 root - INFO - Successfully Read the Dataset as Dataframe
+[ 2024-06-16 18:28:04,809 ] 44 root - INFO - Train Test Split Initiated
+[ 2024-06-16 18:28:04,811 ] 51 root - INFO - Ingestion of the Data is Completed
+[ 2024-06-16 18:28:04,994 ] 27 root - INFO - Features with missing values: []
+[ 2024-06-16 18:28:04,994 ] 41 root - INFO - Float features: []
+[ 2024-06-16 18:28:05,026 ] 55 root - INFO - Numerical features: ['Age as of Academic Year 17/18', 'Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3', 'Id']
+[ 2024-06-16 18:28:05,029 ] 56 root - INFO -    Age as of Academic Year 17/18  Math-exam  Science-exam  English-exam  Math19-1  Science19-1  ...  Science20-2  English20-2  Math20-3  Science20-3  English20-3   Id
+0                             15       70.0            56          92.0      54.0         95.0  ...         83.0         99.0      96.0         94.0         91.0   96
+1                             14       76.0            51          55.0      66.0         63.0  ...         92.0         75.0      70.0         91.0         70.0   84
+2                             14       63.0            51          84.0      76.0         60.0  ...         82.0         73.0      74.0         84.0         88.0  106
+3                             15       90.0            71          52.0      87.0         59.0  ...         87.0         79.0      70.0         74.0         90.0   88
+4                             16       80.0            87          87.0      68.0         94.0  ...         93.0         90.0      91.0         91.0         89.0   85
+
+[5 rows x 23 columns]
+[ 2024-06-16 18:28:05,054 ] 59 root - INFO - Categorical features: ['Gender', 'Current Year (17/18)', 'Proposed Year/Grade (18/19)', 'Year of Admission ', 'Previous Curriculum (17/18)2', 'Current School ', 'Current Curriculum ', 'Previous year/Grade ']
+[ 2024-06-16 18:28:05,054 ] 60 root - INFO -    Gender Current Year (17/18) Proposed Year/Grade (18/19)  ... Current School  Current Curriculum  Previous year/Grade 
+0  Female             Grade 10                    Grade 11  ...        School 1           American          Grade System
+1    Male             Grade 10                    Grade 11  ...        School 1           American          Grade System
+2    Male             Grade 10                    Grade 11  ...        School 1           American          Grade System
+3  Female             Grade 10                    Grade 11  ...        School 1           American          Grade System
+4    Male             Grade 10                    Grade 11  ...        School 1           American          Grade System
+
+[5 rows x 8 columns]
+[ 2024-06-16 18:28:05,089 ] 64 root - INFO - Numerical features with NaN: []
+[ 2024-06-16 18:28:05,091 ] 68 root - INFO - Series([], dtype: float64)
+[ 2024-06-16 18:28:05,091 ] 70 root - INFO - Data preparation completed.
+[ 2024-06-16 18:28:05,101 ] 91 root - INFO - Preparation object saved at: artifacts\preparation.pkl
+[ 2024-06-16 18:28:05,116 ] 26 root - INFO - Read the train and test data completed
+[ 2024-06-16 18:28:05,116 ] 29 root - INFO - Separating Grades
+[ 2024-06-16 18:28:05,116 ] 36 root - INFO - Exam features: ['Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3']
+[ 2024-06-16 18:28:05,116 ] 41 root - INFO - New data features: ['Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3']
+[ 2024-06-16 18:28:05,116 ] 50 root - INFO - Math features: ['Math-exam', 'Math19-1', 'Math19-2', 'Math19-3', 'Math20-1', 'Math20-2', 'Math20-3']
+[ 2024-06-16 18:28:05,116 ] 54 root - INFO - Science features: ['Science-exam', 'Science19-1', 'Science19-2', 'Science19-3', 'Science20-1', 'Science20-2', 'Science20-3']
+[ 2024-06-16 18:28:05,116 ] 58 root - INFO - English features: ['English-exam', 'English19-1', 'English19-2', 'English19-3', 'English20-1', 'English20-2', 'English20-3']
+[ 2024-06-16 18:28:05,116 ] 62 root - INFO - Train data shape before reshaping: (20, 21)
+[ 2024-06-16 18:28:05,116 ] 63 root - INFO - Test data shape before reshaping: (6, 21)
+[ 2024-06-16 18:28:05,116 ] 64 root - INFO - New data shape before reshaping: (26, 21)
+[ 2024-06-16 18:28:05,139 ] 75 root - INFO - Train data reshaped shape: (20, 21)
+[ 2024-06-16 18:28:05,139 ] 76 root - INFO - Test data reshaped shape: (6, 21)
+[ 2024-06-16 18:28:05,139 ] 77 root - INFO - New data reshaped shape: (26, 21)
+[ 2024-06-16 18:28:05,139 ] 78 root - INFO - New data features: ['Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3']
+[ 2024-06-16 18:28:05,139 ] 88 root - INFO - Data transformation completed.
+[ 2024-06-16 18:28:05,152 ] 102 root - INFO - Transformation object saved at: artifacts\transformed_data.pkl
+[ 2024-06-16 18:28:05,152 ] 105 root - INFO - Model Training has been initiated
+[ 2024-06-16 18:28:05,152 ] 107 root - INFO - train_data_reshaped shape: (20, 21)
+[ 2024-06-16 18:28:05,152 ] 108 root - INFO - test_data_reshaped shape: (6, 21)
+[ 2024-06-16 18:28:05,152 ] 109 root - INFO - new_data_reshaped shape: (26, 21)
+[ 2024-06-16 18:28:05,152 ] 110 root - INFO - feature_all: ['Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3']
+[ 2024-06-16 18:28:05,176 ] 84 root - INFO - Evaluation completed.
+[ 2024-06-16 18:28:05,183 ] 84 root - INFO - Evaluation completed.
+[ 2024-06-16 18:28:05,209 ] 84 root - INFO - Evaluation completed.
+[ 2024-06-16 18:28:05,209 ] 38 root - INFO - Data scaling completed.
+[ 2024-06-16 18:28:05,209 ] 48 root - INFO - Model training completed.
+[ 2024-06-16 18:28:05,209 ] 48 root - INFO - Model training completed.
+[ 2024-06-16 18:28:05,235 ] 92 root - INFO - Model saved successfully.
+[ 2024-06-16 18:28:05,239 ] 148 root - INFO - Model training and evaluation completed.

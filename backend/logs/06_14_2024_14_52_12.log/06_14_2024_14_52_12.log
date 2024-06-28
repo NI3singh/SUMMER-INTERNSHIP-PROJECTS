@@ -1,0 +1,22 @@
+[ 2024-06-14 14:52:13,093 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-06-14 14:52:13,137 ] 97 werkzeug - INFO -  * Debugger PIN: 111-881-178
+[ 2024-06-14 14:52:13,841 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:52:13] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-14 14:52:13,841 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:52:13] "[31m[1mGET /data HTTP/1.1[0m" 405 -
+[ 2024-06-14 14:52:20,421 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:52:20] "POST /data HTTP/1.1" 200 -
+[ 2024-06-14 14:52:26,821 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:52:26] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-14 14:52:55,849 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:52:55] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-14 14:53:45,204 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:53:45] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-14 14:53:45,212 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:53:45] "[31m[1mGET /data HTTP/1.1[0m" 405 -
+[ 2024-06-14 14:53:45,545 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:53:45] "[31m[1mGET /data HTTP/1.1[0m" 405 -
+[ 2024-06-14 14:53:51,468 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:53:51] "POST /data HTTP/1.1" 200 -
+[ 2024-06-14 14:53:51,620 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:53:51] "POST /data HTTP/1.1" 200 -
+[ 2024-06-14 14:53:54,677 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:53:54] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-14 14:56:07,557 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:56:07] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-14 14:56:07,691 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:56:07] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-14 14:56:07,798 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:56:07] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-14 14:56:08,210 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:56:08] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-14 14:56:11,889 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:56:11] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-14 14:56:12,101 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:56:12] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-14 14:56:12,399 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:56:12] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-14 14:56:12,812 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 14:56:12] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-14 15:01:35,100 ] 97 werkzeug - INFO -  * Detected change in 'C:\\E Drive\\f drive\\rishabh ki folder hain delete mat karna\\JBcodeapp\\Student Performance Analysis\\project\\backend\\src\\pipeline\\predict_pipeline.py', reloading

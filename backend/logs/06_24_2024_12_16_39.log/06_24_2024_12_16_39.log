@@ -1,0 +1,9 @@
+[ 2024-06-24 12:16:39,054 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-06-24 12:16:39,060 ] 97 werkzeug - INFO -  * Debugger PIN: 111-881-178
+[ 2024-06-24 12:16:44,560 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2024 12:16:44] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-24 12:16:53,563 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2024 12:16:53] "POST /data HTTP/1.1" 200 -
+[ 2024-06-24 12:16:58,158 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2024 12:16:58] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-24 12:17:07,363 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2024 12:17:07] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-24 12:17:07,772 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2024 12:17:07] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-24 12:18:52,599 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Jun/2024 12:18:52] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-24 12:34:59,185 ] 97 werkzeug - INFO -  * Detected change in 'c:\\e drive\\f drive\\rishabh ki folder hain delete mat karna\\jbcodeapp\\student performance analysis\\project\\backend\\app.py', reloading

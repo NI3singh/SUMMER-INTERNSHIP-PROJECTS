@@ -1,0 +1,26 @@
+[ 2024-06-26 13:17:30,683 ] 24 root - INFO - Read of raw data completed
+[ 2024-06-26 13:17:30,683 ] 27 root - INFO - Separating Grades
+[ 2024-06-26 13:17:30,683 ] 34 root - INFO - Exam features: ['Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3']
+[ 2024-06-26 13:17:30,683 ] 47 root - INFO - Math features: ['Math-exam', 'Math19-1', 'Math19-2', 'Math19-3', 'Math20-1', 'Math20-2', 'Math20-3']
+[ 2024-06-26 13:17:31,270 ] 51 root - INFO - Science features: ['Science-exam', 'Science19-1', 'Science19-2', 'Science19-3', 'Science20-1', 'Science20-2', 'Science20-3']
+[ 2024-06-26 13:17:31,284 ] 55 root - INFO - English features: ['English-exam', 'English19-1', 'English19-2', 'English19-3', 'English20-1', 'English20-2', 'English20-3']
+[ 2024-06-26 13:17:31,287 ] 58 root - INFO - Grouing of similar features is completed
+[ 2024-06-26 13:17:31,287 ] 61 root - INFO - Raw data shape before reshaping: (71, 21)
+[ 2024-06-26 13:17:31,319 ] 70 root - INFO - Raw data reshaped shape: (71, 21)
+[ 2024-06-26 13:17:31,319 ] 71 root - INFO - New Exam feature: ['Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3']
+[ 2024-06-26 13:17:31,328 ] 77 root - INFO - Data transformation completed.
+[ 2024-06-26 13:17:31,328 ] 90 root - INFO - Transformation object saved at: artifacts\transformed_data.pkl
+[ 2024-06-26 13:17:31,328 ] 117 root - INFO - Model Training has been initiated
+[ 2024-06-26 13:17:31,328 ] 119 root - INFO - new_data_reshaped shape: (71, 21)
+[ 2024-06-26 13:17:31,328 ] 120 root - INFO - feature_all: ['Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3']
+[ 2024-06-26 13:17:31,812 ] 96 root - INFO - Evaluation completed.
+[ 2024-06-26 13:17:31,812 ] 38 root - INFO - Data scaling completed.
+[ 2024-06-26 13:17:31,812 ] 48 root - INFO - Model training completed.
+[ 2024-06-26 13:17:31,828 ] 38 root - INFO - Data scaling completed.
+[ 2024-06-26 13:17:31,828 ] 48 root - INFO - Model training completed.
+[ 2024-06-26 13:17:31,828 ] 38 root - INFO - Data scaling completed.
+[ 2024-06-26 13:17:31,828 ] 48 root - INFO - Model training completed.
+[ 2024-06-26 13:17:31,828 ] 38 root - INFO - Data scaling completed.
+[ 2024-06-26 13:17:31,828 ] 48 root - INFO - Model training completed.
+[ 2024-06-26 13:17:31,843 ] 104 root - INFO - Model saved successfully.
+[ 2024-06-26 13:17:31,843 ] 167 root - INFO - Model training and evaluation completed.

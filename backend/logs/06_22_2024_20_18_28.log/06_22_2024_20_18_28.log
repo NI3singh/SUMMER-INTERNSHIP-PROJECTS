@@ -1,0 +1,9 @@
+[ 2024-06-22 20:18:28,999 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-06-22 20:18:29,464 ] 97 werkzeug - INFO -  * Debugger PIN: 111-881-178
+[ 2024-06-22 20:25:45,946 ] 97 werkzeug - INFO - 127.0.0.1 - - [22/Jun/2024 20:25:45] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+[ 2024-06-22 20:26:06,486 ] 97 werkzeug - INFO - 127.0.0.1 - - [22/Jun/2024 20:26:06] "POST /upload HTTP/1.1" 200 -
+[ 2024-06-22 20:26:40,329 ] 97 werkzeug - INFO - 127.0.0.1 - - [22/Jun/2024 20:26:40] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+[ 2024-06-22 20:26:46,317 ] 97 werkzeug - INFO - 127.0.0.1 - - [22/Jun/2024 20:26:46] "POST /upload HTTP/1.1" 200 -
+[ 2024-06-22 20:27:02,713 ] 97 werkzeug - INFO - 127.0.0.1 - - [22/Jun/2024 20:27:02] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-22 20:28:02,180 ] 97 werkzeug - INFO - 127.0.0.1 - - [22/Jun/2024 20:28:02] "POST /data HTTP/1.1" 200 -
+[ 2024-06-22 20:28:06,502 ] 97 werkzeug - INFO - 127.0.0.1 - - [22/Jun/2024 20:28:06] "GET /fetch_data HTTP/1.1" 200 -

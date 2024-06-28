@@ -1,0 +1,25 @@
+[ 2024-06-13 22:52:21,042 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-06-13 22:52:21,047 ] 97 werkzeug - INFO -  * Debugger PIN: 111-881-178
+[ 2024-06-13 22:52:21,655 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 22:52:21] "[31m[1mGET /data HTTP/1.1[0m" 400 -
+[ 2024-06-13 22:52:21,804 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 22:52:21] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-13 22:55:09,408 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 22:55:09] "[31m[1mGET /data HTTP/1.1[0m" 400 -
+[ 2024-06-13 22:55:09,591 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 22:55:09] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-13 23:10:43,634 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:10:43] "[31m[1mGET /data HTTP/1.1[0m" 400 -
+[ 2024-06-13 23:10:43,828 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:10:43] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-13 23:10:44,791 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:10:44] "[31m[1mGET /data HTTP/1.1[0m" 400 -
+[ 2024-06-13 23:10:44,936 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:10:44] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-13 23:10:45,614 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:10:45] "[31m[1mGET /data HTTP/1.1[0m" 400 -
+[ 2024-06-13 23:10:45,750 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:10:45] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-13 23:10:46,124 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:10:46] "[31m[1mGET /data HTTP/1.1[0m" 400 -
+[ 2024-06-13 23:10:46,268 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:10:46] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-13 23:17:09,355 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:17:09] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-13 23:17:09,479 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:17:09] "[31m[1mPOST /data HTTP/1.1[0m" 400 -
+[ 2024-06-13 23:19:52,901 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:19:52] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-13 23:19:52,961 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:19:52] "[31m[1mPOST /data HTTP/1.1[0m" 400 -
+[ 2024-06-13 23:20:00,731 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:20:00] "[31m[1mGET /data HTTP/1.1[0m" 400 -
+[ 2024-06-13 23:20:04,331 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:20:04] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-13 23:32:32,603 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:32:32] "[31m[1mPOST /data HTTP/1.1[0m" 400 -
+[ 2024-06-13 23:35:46,194 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:35:46] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-13 23:35:46,243 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:35:46] "[31m[1mPOST /data HTTP/1.1[0m" 400 -
+[ 2024-06-13 23:36:35,894 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:36:35] "[31m[1mGET /data HTTP/1.1[0m" 400 -
+[ 2024-06-13 23:36:37,404 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2024 23:36:37] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -

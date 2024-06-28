@@ -1,0 +1,13 @@
+pandas
+seaborn
+numpy
+matplotlib
+scikit-learn
+Flask
+scipy
+Werkzeug
+setuptools
+dill
+Flask-Cors
+openpyxl
+-e .

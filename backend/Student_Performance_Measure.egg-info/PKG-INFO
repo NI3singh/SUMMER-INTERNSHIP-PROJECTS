@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Student-Performance-Measure
+Version: 0.0.1
+Author: Rishabh
+Author-email: rishabhamar1234@gmail.com
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: Flask
+Requires-Dist: scipy
+Requires-Dist: Werkzeug
+Requires-Dist: setuptools
+Requires-Dist: dill
+Requires-Dist: Flask-Cors
+Requires-Dist: openpyxl

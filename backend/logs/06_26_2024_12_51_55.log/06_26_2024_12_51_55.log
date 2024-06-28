@@ -1,0 +1,12 @@
+[ 2024-06-26 12:51:55,149 ] 24 root - INFO - Read of raw data completed
+[ 2024-06-26 12:51:55,149 ] 27 root - INFO - Separating Grades
+[ 2024-06-26 12:51:55,149 ] 34 root - INFO - Exam features: ['Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3']
+[ 2024-06-26 12:51:55,149 ] 47 root - INFO - Math features: ['Math-exam', 'Math19-1', 'Math19-2', 'Math19-3', 'Math20-1', 'Math20-2', 'Math20-3']
+[ 2024-06-26 12:51:55,149 ] 51 root - INFO - Science features: ['Science-exam', 'Science19-1', 'Science19-2', 'Science19-3', 'Science20-1', 'Science20-2', 'Science20-3']
+[ 2024-06-26 12:51:55,149 ] 55 root - INFO - English features: ['English-exam', 'English19-1', 'English19-2', 'English19-3', 'English20-1', 'English20-2', 'English20-3']
+[ 2024-06-26 12:51:55,149 ] 58 root - INFO - Grouing of similar features is completed
+[ 2024-06-26 12:51:55,149 ] 61 root - INFO - Raw data shape before reshaping: (71, 21)
+[ 2024-06-26 12:51:55,162 ] 70 root - INFO - Raw data reshaped shape: (71, 21)
+[ 2024-06-26 12:51:55,162 ] 71 root - INFO - New Exam feature: ['Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3']
+[ 2024-06-26 12:51:55,167 ] 77 root - INFO - Data transformation completed.
+[ 2024-06-26 12:51:55,174 ] 90 root - INFO - Transformation object saved at: artifacts\transformed_data.pkl

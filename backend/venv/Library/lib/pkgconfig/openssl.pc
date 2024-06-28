@@ -1,0 +1,9 @@
+prefix=C:/E Drive/f drive/rishabh ki folder hain delete mat karna/JBcodeapp/Student Performance Analysis/project/backend/venv/Library 
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Requires: libssl libcrypto
+Version: 3.0.13 

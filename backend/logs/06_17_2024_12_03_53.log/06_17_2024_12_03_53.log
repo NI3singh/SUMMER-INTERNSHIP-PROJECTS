@@ -1,0 +1,15 @@
+[ 2024-06-17 12:03:53,672 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-06-17 12:03:53,682 ] 97 werkzeug - INFO -  * Debugger PIN: 111-881-178
+[ 2024-06-17 12:03:54,374 ] 97 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2024 12:03:54] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-17 12:03:59,917 ] 97 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2024 12:03:59] "POST /data HTTP/1.1" 200 -
+[ 2024-06-17 12:04:07,072 ] 97 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2024 12:04:07] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-17 12:05:03,760 ] 97 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2024 12:05:03] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-17 12:05:09,633 ] 97 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2024 12:05:09] "POST /data HTTP/1.1" 200 -
+[ 2024-06-17 12:05:12,096 ] 97 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2024 12:05:12] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-17 12:05:42,611 ] 97 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2024 12:05:42] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-17 12:05:47,685 ] 97 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2024 12:05:47] "POST /data HTTP/1.1" 200 -
+[ 2024-06-17 12:05:51,128 ] 97 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2024 12:05:51] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-17 12:05:51,399 ] 97 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2024 12:05:51] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-17 12:06:25,155 ] 97 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2024 12:06:25] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-17 12:06:32,422 ] 97 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2024 12:06:32] "POST /data HTTP/1.1" 200 -
+[ 2024-06-17 12:06:36,659 ] 97 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2024 12:06:36] "GET /fetch_data HTTP/1.1" 200 -

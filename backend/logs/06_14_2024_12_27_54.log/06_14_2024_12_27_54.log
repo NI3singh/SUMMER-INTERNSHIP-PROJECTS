@@ -1,0 +1,6 @@
+[ 2024-06-14 12:27:54,598 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-06-14 12:27:54,608 ] 97 werkzeug - INFO -  * Debugger PIN: 111-881-178
+[ 2024-06-14 12:29:03,212 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 12:29:03] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-14 12:29:08,167 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 12:29:08] "POST /data HTTP/1.1" 200 -
+[ 2024-06-14 12:30:14,539 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 12:30:14] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-14 12:30:18,134 ] 97 werkzeug - INFO - 127.0.0.1 - - [14/Jun/2024 12:30:18] "POST /data HTTP/1.1" 200 -

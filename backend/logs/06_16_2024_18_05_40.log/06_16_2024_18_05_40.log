@@ -1,0 +1,27 @@
+[ 2024-06-16 18:05:40,657 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-06-16 18:05:40,657 ] 97 werkzeug - INFO -  * Debugger PIN: 111-881-178
+[ 2024-06-16 18:05:41,425 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:05:41] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-16 18:05:45,975 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:05:45] "POST /data HTTP/1.1" 200 -
+[ 2024-06-16 18:05:46,476 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:05:46] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-16 18:06:02,100 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:06:02] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-16 18:06:03,460 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:06:03] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-16 18:13:17,446 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:13:17] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-16 18:13:39,029 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:13:39] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-16 18:13:39,755 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:13:39] "POST /data HTTP/1.1" 200 -
+[ 2024-06-16 18:17:05,867 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:17:05] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-16 18:17:28,162 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:17:28] "POST /data HTTP/1.1" 200 -
+[ 2024-06-16 18:17:29,419 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:17:29] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-16 18:19:31,456 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:19:31] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-16 18:19:37,681 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:19:37] "POST /data HTTP/1.1" 200 -
+[ 2024-06-16 18:19:39,409 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:19:39] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-16 18:22:47,902 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:22:47] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+[ 2024-06-16 18:23:50,197 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:23:50] "POST /upload HTTP/1.1" 200 -
+[ 2024-06-16 18:24:27,800 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:24:27] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-16 18:24:34,864 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:24:34] "POST /data HTTP/1.1" 200 -
+[ 2024-06-16 18:24:43,908 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:24:43] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-16 18:28:01,632 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:28:01] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-16 18:28:05,485 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:28:05] "POST /data HTTP/1.1" 200 -
+[ 2024-06-16 18:28:06,554 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:28:06] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-16 18:42:41,086 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:42:41] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-16 18:42:41,731 ] 97 werkzeug - INFO - 127.0.0.1 - - [16/Jun/2024 18:42:41] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-16 18:46:30,744 ] 97 werkzeug - INFO -  * Detected change in 'c:\\e drive\\f drive\\rishabh ki folder hain delete mat karna\\jbcodeapp\\student performance analysis\\project\\backend\\src\\components\\model_trainer.py', reloading

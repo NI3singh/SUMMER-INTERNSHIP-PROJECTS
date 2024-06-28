@@ -1,0 +1,51 @@
+[ 2024-06-28 13:42:57,833 ] 27 root - INFO - Read of raw data completed
+[ 2024-06-28 13:42:57,833 ] 30 root - INFO - Separating Grades
+[ 2024-06-28 13:42:57,833 ] 27 root - INFO - Read of raw data completed
+[ 2024-06-28 13:42:57,833 ] 30 root - INFO - Separating Grades
+[ 2024-06-28 13:42:57,842 ] 35 root - INFO - Exam features: ['Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3']
+[ 2024-06-28 13:42:57,844 ] 41 root - INFO - Math features: ['Math-exam', 'Math19-1', 'Math19-2', 'Math19-3', 'Math20-1', 'Math20-2', 'Math20-3']
+[ 2024-06-28 13:42:57,844 ] 44 root - INFO - Science features: ['Science-exam', 'Science19-1', 'Science19-2', 'Science19-3', 'Science20-1', 'Science20-2', 'Science20-3']
+[ 2024-06-28 13:42:57,844 ] 47 root - INFO - English features: ['English-exam', 'English19-1', 'English19-2', 'English19-3', 'English20-1', 'English20-2', 'English20-3']
+[ 2024-06-28 13:42:57,844 ] 49 root - INFO - Grouping of similar features is completed
+[ 2024-06-28 13:42:57,844 ] 51 root - INFO - Raw data shape before reshaping: (71, 21)
+[ 2024-06-28 13:42:57,833 ] 35 root - INFO - Exam features: ['Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3']
+[ 2024-06-28 13:42:57,844 ] 41 root - INFO - Math features: ['Math-exam', 'Math19-1', 'Math19-2', 'Math19-3', 'Math20-1', 'Math20-2', 'Math20-3']
+[ 2024-06-28 13:42:57,844 ] 44 root - INFO - Science features: ['Science-exam', 'Science19-1', 'Science19-2', 'Science19-3', 'Science20-1', 'Science20-2', 'Science20-3']
+[ 2024-06-28 13:42:57,844 ] 47 root - INFO - English features: ['English-exam', 'English19-1', 'English19-2', 'English19-3', 'English20-1', 'English20-2', 'English20-3']
+[ 2024-06-28 13:42:57,844 ] 49 root - INFO - Grouping of similar features is completed
+[ 2024-06-28 13:42:57,844 ] 51 root - INFO - Raw data shape before reshaping: (71, 21)
+[ 2024-06-28 13:42:57,844 ] 58 root - INFO - Raw data reshaped shape: (71, 21)
+[ 2024-06-28 13:42:57,844 ] 59 root - INFO - New Exam feature: ['Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3']
+[ 2024-06-28 13:42:57,844 ] 64 root - INFO - Data transformation completed.
+[ 2024-06-28 13:42:57,844 ] 78 root - INFO - Transformation object saved at: artifacts\transformed_data.pkl
+[ 2024-06-28 13:42:57,844 ] 121 root - INFO - Model Training has been initiated
+[ 2024-06-28 13:42:57,844 ] 123 root - INFO - new_data_reshaped shape: (71, 21)
+[ 2024-06-28 13:42:57,844 ] 124 root - INFO - feature_all: ['Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3']
+[ 2024-06-28 13:42:57,859 ] 58 root - INFO - Raw data reshaped shape: (71, 21)
+[ 2024-06-28 13:42:57,859 ] 59 root - INFO - New Exam feature: ['Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3']
+[ 2024-06-28 13:42:57,859 ] 64 root - INFO - Data transformation completed.
+[ 2024-06-28 13:42:57,859 ] 78 root - INFO - Transformation object saved at: artifacts\transformed_data.pkl
+[ 2024-06-28 13:42:57,859 ] 121 root - INFO - Model Training has been initiated
+[ 2024-06-28 13:42:57,859 ] 123 root - INFO - new_data_reshaped shape: (71, 21)
+[ 2024-06-28 13:42:57,859 ] 124 root - INFO - feature_all: ['Math-exam', 'Science-exam', 'English-exam', 'Math19-1', 'Science19-1', 'English19-1', 'Math19-2', 'Science19-2', 'English19-2', 'Math19-3', 'Science19-3', 'English19-3', 'Math20-1', 'Science20-1', 'English20-1', 'Math20-2', 'Science20-2', 'English20-2', 'Math20-3', 'Science20-3', 'English20-3']
+[ 2024-06-28 13:42:58,575 ] 96 root - INFO - Evaluation completed.
+[ 2024-06-28 13:42:58,575 ] 38 root - INFO - Data scaling completed.
+[ 2024-06-28 13:42:58,575 ] 96 root - INFO - Evaluation completed.
+[ 2024-06-28 13:42:58,575 ] 38 root - INFO - Data scaling completed.
+[ 2024-06-28 13:43:00,510 ] 50 root - INFO - Model training completed.
+[ 2024-06-28 13:43:00,541 ] 38 root - INFO - Data scaling completed.
+[ 2024-06-28 13:43:00,541 ] 38 root - INFO - Data scaling completed.
+[ 2024-06-28 13:43:00,541 ] 50 root - INFO - Model training completed.
+[ 2024-06-28 13:43:00,541 ] 50 root - INFO - Model training completed.
+[ 2024-06-28 13:43:00,541 ] 38 root - INFO - Data scaling completed.
+[ 2024-06-28 13:43:00,541 ] 38 root - INFO - Data scaling completed.
+[ 2024-06-28 13:43:00,541 ] 50 root - INFO - Model training completed.
+[ 2024-06-28 13:43:00,541 ] 50 root - INFO - Model training completed.
+[ 2024-06-28 13:43:00,541 ] 38 root - INFO - Data scaling completed.
+[ 2024-06-28 13:43:00,541 ] 38 root - INFO - Data scaling completed.
+[ 2024-06-28 13:43:00,541 ] 50 root - INFO - Model training completed.
+[ 2024-06-28 13:43:00,541 ] 50 root - INFO - Model training completed.
+[ 2024-06-28 13:43:00,557 ] 106 root - INFO - Model saved successfully.
+[ 2024-06-28 13:43:00,557 ] 106 root - INFO - Model saved successfully.
+[ 2024-06-28 13:43:00,557 ] 172 root - INFO - Model training and evaluation completed.
+[ 2024-06-28 13:43:00,557 ] 172 root - INFO - Model training and evaluation completed.

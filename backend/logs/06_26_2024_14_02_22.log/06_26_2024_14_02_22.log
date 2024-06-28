@@ -1,0 +1,15 @@
+[ 2024-06-26 14:02:22,417 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-06-26 14:02:22,417 ] 97 werkzeug - INFO -  * Debugger PIN: 111-881-178
+[ 2024-06-26 14:02:31,235 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Jun/2024 14:02:31] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-26 14:02:37,278 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Jun/2024 14:02:37] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-26 14:02:39,760 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Jun/2024 14:02:39] "POST /data HTTP/1.1" 200 -
+[ 2024-06-26 14:05:54,125 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Jun/2024 14:05:54] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-26 14:06:03,397 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Jun/2024 14:06:03] "POST /data HTTP/1.1" 200 -
+[ 2024-06-26 14:06:03,557 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Jun/2024 14:06:03] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-26 14:07:10,913 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Jun/2024 14:07:10] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-26 14:07:11,137 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Jun/2024 14:07:11] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-26 14:09:01,443 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Jun/2024 14:09:01] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-26 14:09:01,644 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Jun/2024 14:09:01] "[33mGET /css/blockedPage.css HTTP/1.1[0m" 404 -
+[ 2024-06-26 14:09:35,286 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Jun/2024 14:09:35] "OPTIONS /data HTTP/1.1" 200 -
+[ 2024-06-26 14:09:42,736 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Jun/2024 14:09:42] "GET /fetch_data HTTP/1.1" 200 -
+[ 2024-06-26 14:09:44,200 ] 97 werkzeug - INFO - 127.0.0.1 - - [26/Jun/2024 14:09:44] "POST /data HTTP/1.1" 200 -
