@@ -197,7 +197,3 @@ https://github.com/user-attachments/assets/07626685-19d2-4f1b-804c-78fb2ada77fb
 ## 🤝 Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
-
-## 📄 License
-
-[Choose a license for your project (e.g., MIT, Apache 2.0)]
