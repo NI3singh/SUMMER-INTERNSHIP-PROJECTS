@@ -56,13 +56,13 @@ This project analyzes student performance data to identify trends, cluster stude
 
 ## ⚙️ Setup (Backend - Python)
 
-1.  **Clone the repository:** (If you have the repository available)
+1.  **Clone the repository:**
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/rishabhamar/student-performance-analysis
     ```
 2.  **Navigate to the project directory:**
     ```bash
-    cd <project_directory>/backend  # Go to the backend directory
+    cd student-performance-analysis/backend  # Go to the backend directory
     ```
 3.  **Create a virtual environment (recommended):**
     ```bash
@@ -72,18 +72,18 @@ This project analyzes student performance data to identify trends, cluster stude
     ```
 4.  **Install dependencies:**
     ```bash
-    pip install -r requirements.txt  # Create a requirements.txt file with the necessary libraries
+    pip install -r requirements.txt
     ```
-5.  **Run the backend (if applicable):**  (This depends on how you structure your backend)
+5.  **Run the backend:** 
     ```bash
-    python your_backend_script.py
+    python app.py
     ```
 
 ## 💻 Setup (Frontend - React)
 
 1.  **Navigate to the frontend directory:**
     ```bash
-    cd <project_directory>/frontend
+    cd student-performance-analysis/frontend
     ```
 2.  **Install dependencies:**
     ```bash
@@ -103,8 +103,7 @@ This project analyzes student performance data to identify trends, cluster stude
 
 ### 📂 File Upload
 
--   Upload CSV files containing student data (train, test, or combined).  The expected format should be clearly documented.
-
+-   Upload CSV files containing student data (train, test, or combined).
 ### 🧑‍🎓 Student Details
 
 -   View individual student profiles, including enrollment number, name, and division.
@@ -136,7 +135,7 @@ This project analyzes student performance data to identify trends, cluster stude
 ### ✨ Data Transformation
 
 -   Feature scaling (e.g., StandardScaler).
--   Feature engineering (if applicable).
+-   Feature engineering.
 
 ### 📊 Exploratory Data Analysis (EDA)
 
