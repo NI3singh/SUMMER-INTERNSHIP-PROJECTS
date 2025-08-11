@@ -30,7 +30,7 @@ function UploadCSV() {
   // Handler for form submission to upload the raw file
   function handleRawSubmit(event) {
     event.preventDefault();
-    const url = "http://127.0.0.1:5000/upload";
+    const url = "https://student-performance-analysis-7du3.onrender.com/upload";
     const formData = new FormData();
     formData.append("file", rawFile);
     const config = {
