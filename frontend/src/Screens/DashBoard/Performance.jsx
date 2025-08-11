@@ -20,7 +20,7 @@ function Performance() {
   // Handle form submission to send enrollment number to the server
   const handleSubmit = (event) => {
     event.preventDefault();
-    const url = "http://127.0.0.1:5000/data";
+    const url = "https://student-performance-analysis-7du3.onrender.com/data";
     console.log(enr);
     const data = { enrollment: enr };
     const config = {
@@ -38,7 +38,7 @@ function Performance() {
   // Fetch data from the server
   const fetchData = async () => {
     try {
-      const result = await axios.get("http://127.0.0.1:5000/fetch_data");
+      const result = await axios.get("https://student-performance-analysis-7du3.onrender.com/fetch_data");
       console.log(result);
       console.log(result.data);
       setData(result.data);
